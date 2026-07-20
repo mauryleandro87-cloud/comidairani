@@ -1,0 +1,46 @@
+/*=========================================
+=            REVEAL EFFECT                =
+=========================================*/
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:all .8s ease;
+
+}
+
+.reveal.visible{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/*=========================================
+=            IMÁGENES                     =
+=========================================*/
+
+.hero img,
+.doble-img img,
+.cultura img,
+.gastronomia img{
+
+    transition:transform .4s ease;
+
+}
+
+
+/*=========================================
+=            BOTONES                      =
+=========================================*/
+
+.btn{
+
+    transition:all .3s ease;
+
+}

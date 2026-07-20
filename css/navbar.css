@@ -1,0 +1,300 @@
+/*====================================================
+=                 HEADER                             =
+====================================================*/
+
+.header{
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    background: rgba(255,255,255,.95);
+
+    backdrop-filter: blur(8px);
+
+    -webkit-backdrop-filter: blur(8px);
+
+    box-shadow: 0 2px 12px rgba(0,0,0,.08);
+
+    z-index: 1000;
+
+    transition: all .35s ease;
+
+}
+
+
+/*====================================================
+=                  CONTENEDOR                        =
+====================================================*/
+
+.menu{
+
+    width: 90%;
+    max-width: 1200px;
+
+    height: 80px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+/*====================================================
+=                    LOGO                            =
+====================================================*/
+
+.logo-box{
+
+    display: flex;
+
+    flex-direction: column;
+
+    text-decoration: none;
+
+    color: #000;
+
+}
+
+.logo-box h1{
+
+    font-family: var(--fuente-logo);
+
+    font-size: 2rem;
+
+    line-height: 1;
+
+}
+
+.logo-box span{
+
+    font-size: .85rem;
+
+    letter-spacing: 1px;
+
+    margin-top: 4px;
+
+}
+
+
+/*====================================================
+=                 NAVEGACIÓN                         =
+====================================================*/
+
+.navbar{
+
+    display: flex;
+
+}
+
+.navbar ul{
+
+    list-style: none;
+
+    display: flex;
+
+    gap: 35px;
+
+}
+
+.navbar li{
+
+    list-style: none;
+
+}
+
+.navbar a{
+
+    position: relative;
+
+    text-decoration: none;
+
+    color: #222;
+
+    font-size: 1rem;
+
+    font-weight: 500;
+
+    padding: 8px 0;
+
+    transition: color .3s ease;
+
+}
+
+
+/* Línea inferior animada */
+
+.navbar a::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -4px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #000;
+
+    transition: width .3s ease;
+
+}
+
+.navbar a:hover{
+
+    color: #000;
+
+}
+
+.navbar a:hover::after{
+
+    width: 100%;
+
+}
+
+
+/* Página activa */
+
+.navbar a.active{
+
+    font-weight: 700;
+
+}
+
+.navbar a.active::after{
+
+    width: 100%;
+
+}
+
+
+/*====================================================
+=               BOTÓN HAMBURGUESA                    =
+====================================================*/
+
+.menu-toggle{
+
+    display: none;
+
+}
+
+.hamburguesa{
+
+    display: none;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    user-select: none;
+
+}
+
+
+/*====================================================
+=                HEADER EN SCROLL                    =
+====================================================*/
+
+.header.scrolled{
+
+    height: 70px;
+
+    background: rgba(255,255,255,.98);
+
+    box-shadow: 0 5px 18px rgba(0,0,0,.15);
+
+}
+
+
+/*====================================================
+=                 EFECTO BOTONES                     =
+====================================================*/
+
+.navbar a{
+
+    transition:
+
+        color .3s,
+
+        transform .3s;
+
+}
+
+.navbar a:hover{
+
+    transform: translateY(-2px);
+
+}
+
+
+/*====================================================
+=                  RESPONSIVE                        =
+====================================================*/
+
+@media(max-width:768px){
+
+    .hamburguesa{
+
+        display:block;
+
+    }
+
+    .navbar{
+
+        position:absolute;
+
+        top:80px;
+
+        left:0;
+
+        width:100%;
+
+        background:white;
+
+        display:none;
+
+        box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+    }
+
+    .navbar ul{
+
+        flex-direction:column;
+
+        gap:0;
+
+    }
+
+    .navbar li{
+
+        border-bottom:1px solid #eee;
+
+    }
+
+    .navbar a{
+
+        display:block;
+
+        padding:18px;
+
+    }
+
+    .menu-toggle:checked~.navbar{
+
+        display:block;
+
+    }
+
+}
