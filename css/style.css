@@ -1,8 +1,7 @@
-/*
 
 @import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&display=swap');
 
-
+/*
 
 ====================================================
 =            VARIABLES DEL PROYECTO                  =
@@ -20,7 +19,7 @@
 
     /* Tipografía */
 
-    --fuente-principal:Arial, Helvetica, sans-serif;
+    --fuente-principal:'Lemonada';
     --fuente-logo:'Lemonada', cursive;
 
     /* Espaciado */
@@ -85,6 +84,16 @@ body{
 
 }
 
+/*====================================================
+=           Titulo gasronomia                           =
+====================================================*/
+
+.gastronomia{
+
+    padding-top: 30px;
+
+}
+
 
 /*====================================================
 =            IMÁGENES                                =
@@ -99,6 +108,16 @@ img{
     height:auto;
 
 }
+.img-persia{
+
+    width:50%;
+
+    display: block;
+
+    margin-top: 20px;
+
+}
+
 
 
 /*====================================================
@@ -161,6 +180,20 @@ a{
 
 }
 
+/*====================================================
+=            header                              =
+====================================================*/
+
+.lenguajes{
+    display: flex;
+    gap: .5rem;
+}
+    
+.lang-button{
+    background-color: transparent;
+    font-size: 1rem;
+    border: none;
+}
 
 /*====================================================
 =            SECCIONES                              =
@@ -168,8 +201,11 @@ a{
 
 section{
 
-    margin-bottom:80px;
+    margin-bottom:20px;
 
+}
+.historia-texto{
+    margin-top: 20px;
 }
 
 
@@ -181,4 +217,14 @@ section{
 
     font-weight:bold;
 
+}
+
+/*====================================================
+=           footer                          =
+====================================================*/
+
+.footer{
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
 }
