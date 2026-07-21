@@ -23,21 +23,25 @@
         <div class="menu container">
 
             <a href="index.html" class="logo-box">
-                <h1>Iran</h1>
-                <p>Historia milenaria y cultura</p>
+                <h1 data-section="headerl" data-value="logoh">Iran</h1>
+                <p data-section="headerl" data-value="plogo">Historia milenaria y cultura</p>
             </a>
+        <div class="lenguajes">
+            <button class="lang-button" data-lenguaje="es">ES</button>
+            <button class="lang-button" data-lenguaje="en">US</button>
 
+        </div>
                         <!-- Botón hamburguesa
              <input type="checkbox" id="menu-toggle"> -->
              <label for="menu-toggle" class="hamburguesa">
             ☰
         </label>
 
-            <nav class="navbar">
+            <nav class="navbar" id="navbarPrincipal">
                 <ul>
-                    <li><a href="gastronomia.html">Gastronomía</a></li>
-                    <li><a href="fusiones.html">Fusiones</a></li>
-                    <li><a href="index.html">Historia</a></li>
+                    <li><a href="gastronomia.html" data-section="headerl" data-value="gastronomia">Gastronomía</a></li>
+                    <li><a href="fusiones.html" data-section="headerl" data-value="fusiones">Fusiones</a></li>
+                    <li><a href="index.html" data-section="headerl" data-value="historia">Historia</a></li>
                 </ul>
             </nav>
 
@@ -51,7 +55,7 @@
         <section class="fila">
 
             <div class="texto-box">
-                <p>
+                <p data-section="fusionesParrafo" data-value="p1Fusiones">
                     Desde tiempos antiguos, la comida en Irán no solo
                     cumplía una función alimenticia, sino también social
                     y cultural. Compartir alimentos era una forma de
@@ -75,7 +79,7 @@
             </div>
 
             <div class="texto-box">
-                <p>
+                <p data-section="fusionesParrafo" data-value="p2Fusiones">
                     Ingredientes como el arroz, las hierbas frescas,
                     el azafrán, las nueces, la granada y las carnes
                     cocinadas lentamente comenzaron a adquirir importancia
@@ -91,7 +95,7 @@
         <section class="fila">
 
             <div class="texto-box">
-                <p>
+                <p data-section="fusionesParrafo" data-value="p3Fusiones">
                     Además, la gastronomía iraní estuvo estrechamente
                     relacionada con elementos culturales como los jardines
                     persas, la poesía, las celebraciones y las festividades
@@ -111,7 +115,7 @@
 
         <section class="texto-final">
 
-            <p>
+            <p data-section="fusionesParrafo" data-value="p4Fusiones">
                 Con el paso del tiempo, la cocina persa influyó en otras
                 gastronomías de regiones vecinas, dejando huella en
                 tradiciones culinarias de Turquía, Asia Central, India
@@ -125,11 +129,11 @@
     </main>
         <footer class="footer">
 
-        <div class="redes">
-            <span>Facebook</span>
-            <span>LinkedIn</span>
-            <span>YouTube</span>
-            <span>Instagram</span>
+        <div class="btn-group">
+            <a href="#" class="btn btn-outline-secondary">Facebook</a>
+            <a href="#" class="btn btn-outline-secondary">LinkedIn</a>
+            <a href="#" class="btn btn-outline-secondary">YouTube</a>
+            <a href="#" class="btn btn-outline-secondary">Instagram</a>
         </div>
 
     </footer>

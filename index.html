@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,9 +26,15 @@
         <div class="menu container">
 
             <a href="index.html" class="logo-box">
-                <h1>Iran</h1>
-                <p>Historia milenaria y cultura</p>
+                <h1 data-section="headerl" data-value="logoh">Iran</h1>
+                <p data-section="headerl" data-value="plogo">Historia milenaria y cultura</p>
             </a>
+
+        <div class="lenguajes">
+            <button class="lang-button" data-lenguaje="es">ES</button>
+            <button class="lang-button" data-lenguaje="en">US</button>
+
+        </div>
 
                         <!-- Botón hamburguesa -->
            <!--  <input type="checkbox" id="menu-toggle">-->
@@ -38,24 +44,25 @@
 
             <nav class="navbar" id="navbarPrincipal">
                 <ul>
-                    <li><a href="gastronomia.html">Gastronomía</a></li>
-                    <li><a href="fusiones.html">Fusiones</a></li>
-                    <li><a href="index.html">Historia</a></li>
+                    <li><a href="gastronomia.html" data-section="headerl" data-value="gastronomia">Gastronomía</a></li>
+                    <li><a href="fusiones.html" data-section="headerl" data-value="fusiones">Fusiones</a></li>
+                    <li><a href="index.html" data-section="headerl" data-value="historia">Historia</a></li>
                 </ul>
             </nav>
 
         </div>
+
     </header>
 
     <main id="hero" class="container">
 
         <section class="hero reveal" id="hero">
-            <h2>Irán su cultura y gastronomía</h2>
+            <h2 data-section="historiaParrafo" data-value="tituloHistoria">Irán su cultura y gastronomía</h2>
 
             <img src="img/iran.jpg" alt="Vista panorámica de Irán" class="img-fluid">
 
-            <p>
-                <strong class="negrilla">Irán </strong>es un país ubicado en el oeste de
+            <p data-section="historiaParrafo" data-value="p1Historia">
+                Irán es un país ubicado en el oeste de
                  Asia y uno de los territorios con mayor 
                  riqueza histórica y cultural del mundo. 
                  Conocido antiguamente como Persia, posee 
@@ -73,7 +80,7 @@
         </section>
 
         <section class="texto">
-            <p>
+            <p data-section="historiaParrafo" data-value="p2Historia">
                 La nación iraní se caracteriza por 
                 a diversidad de sus paisajes, que incluyen desiertos, 
                 montañas, jardines y grandes ciudades históricas. 
@@ -87,7 +94,7 @@
 
         <section id="cultura" class="cultura">
             <img src="img/familia.jpg" alt="Familia iraní">
-            <p>
+            <p data-section="historiaParrafo" data-value="p3Historia">
                 La cultura iraní se distingue por su fuerte tradición 
                 artística y humanista. La poesía, la música, la caligrafía 
                 y la hospitalidad forman parte esencial de la identidad 
@@ -100,7 +107,7 @@
 
         <section id="gastronomia" class="gastronomia">
             <img src="img/comida.jpg" alt="">
-            <p>
+            <p data-section="historiaParrafo" data-value="p4Historia">
                 el ámbito gastronómico, Irán es reconocido por 
                 una cocina rica en aromas, especias y colores, 
                 donde ingredientes como el azafrán, el arroz, las 
@@ -116,13 +123,12 @@
 
     <footer id="footer" class="footer">
   
-        <div class="redes">
-            <span>Facebook</span>
-            <span>LinkedIn</span>
-            <span>YouTube</span>
-            <span>Instagram</span>
+        <div class="btn-group">
+            <a href="#" class="btn btn-outline-secondary">Facebook</a>
+            <a href="#" class="btn btn-outline-secondary">LinkedIn</a>
+            <a href="#" class="btn btn-outline-secondary">YouTube</a>
+            <a href="#" class="btn btn-outline-secondary">Instagram</a>
         </div>
-
   
     </footer>
 <!-- ==========================

@@ -25,10 +25,14 @@
         <div class="menu container">
 
             <a href="index.html" class="logo-box">
-                <h1>Iran</h1>
-                <p>Historia milenaria y cultura</p>
+                <h1 data-section="headerl" data-value="logoh">Iran</h1>
+                <p data-section="headerl" data-value="plogo">Historia milenaria y cultura</p>
             </a>
+        <div class="lenguajes">
+            <button class="lang-button" data-lenguaje="es">ES</button>
+            <button class="lang-button" data-lenguaje="en">US</button>
 
+        </div>
 
                         <!-- Botón hamburguesa
              <input type="checkbox" id="menu-toggle"> -->
@@ -38,12 +42,11 @@
 
             <nav class="navbar" id="navbarPrincipal">
                 <ul>
-                    <li><a href="gastronomia.html">Gastronomía</a></li>
-                    <li><a href="fusiones.html">Fusiones</a></li>
-                    <li><a href="index.html">Historia</a></li>
+                    <li><a href="gastronomia.html" data-section="headerl" data-value="gastronomia">Gastronomía</a></li>
+                    <li><a href="fusiones.html" data-section="headerl" data-value="fusiones">Fusiones</a></li>
+                    <li><a href="index.html" data-section="headerl" data-value="historia">Historia</a></li>
                 </ul>
             </nav>
-
         </div>
     </header>
 
@@ -51,15 +54,15 @@
 
         <section id="gastronomia" class="gastronomia reveal">
 
-            <h2>La Gastronomía iraní</h2>
+            <h2 data-section="gastroParrafo" data-value="tituloGastro">La Gastronomía iraní</h2>
 
             <div class="historia-box">
 
-                <img src="img/persia.jpg" alt="Historia Persia">
+                <img src="img/persia.jpg" alt="Historia Persia" class="img-persia">
 
                 <div class="historia-texto">
 
-                    <p>
+                    <p data-section="gastroParrafo" data-value="p1Gastro">
                         La gastronomía iraní tiene sus raíces en la antigua
                         civilización persa, considerada una de las culturas más
                         influyentes de la historia de Asia y Oriente Medio.
@@ -77,7 +80,7 @@
 
         <section class="descripcion">
 
-            <p>
+            <p data-section="gastroParrafo" data-value="p2Gastro">
                 Gracias a su ubicación geográfica, Persia conectaba rutas
                 comerciales entre Oriente y Occidente, lo que permitió la
                 llegada de especias, frutas, métodos de cocción e ingredientes
@@ -94,13 +97,11 @@
     <!-- FOOTER -->
 
     <footer class="footer">
-        
-
-        <div class="redes">
-            <span>Facebook</span>
-            <span>LinkedIn</span>
-            <span>YouTube</span>
-            <span>Instagram</span>
+        <div class="btn-group">
+            <a href="#" class="btn btn-outline-secondary">Facebook</a>
+            <a href="#" class="btn btn-outline-secondary">LinkedIn</a>
+            <a href="#" class="btn btn-outline-secondary">YouTube</a>
+            <a href="#" class="btn btn-outline-secondary">Instagram</a>
         </div>
 
     </footer>
